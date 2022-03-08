@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css" />
+    <title>list</title>
+  </head>
+  <body>
+    <header><h1>My todo List</h1></header>
+    <form action="">
+      <input type="text" class="todo-name" />
+      <button class="todo-button" type="submit">
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+      </button>
+      <select class="filter">
+        <!-- <option value="options">Options</option> -->
+        <option value="all">All</option>
+        <option value="complete">Complete</option>
+        <option value="uncomplete">Uncomplete</option>
+      </select>
+    </form>
+    <div class="edit">
+      <input type="text" class="edit-input" />
+      <button class="edit-btn"><i class="fas fa-clipboard-check"></i></button>
+      <button class="editcan-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
